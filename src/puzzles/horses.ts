@@ -8,11 +8,6 @@ const cases : number[][] = [
 ]
 
 const solution : Function = (params : number[]) : number => {
-    if(params.length != 0){
-
-        return params[0]
-    }
-
     return 0
 }
 

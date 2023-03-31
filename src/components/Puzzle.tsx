@@ -1,10 +1,10 @@
+import { memo } from "react";
 import type{ PuzzleProps, CaseType } from "../types/exercises";
 
 
 
 
-export default function Puzzle({ puzzle }: { puzzle: PuzzleProps }) {
-
+const Puzzle =  memo(function Puzzle({ puzzle }: { puzzle: PuzzleProps }) {
 
   return (
     <div>
@@ -44,4 +44,7 @@ export default function Puzzle({ puzzle }: { puzzle: PuzzleProps }) {
 
     </div>
   )
-}
+})
+
+
+export default Puzzle
