@@ -7,8 +7,19 @@ const cases : number[][] = [
     
 ]
 
-const solution : Function = (params : number[]) : number => {
-    return 0
+const solution : Function = (strengths : number[]) : number => {
+    
+    const sortedStrengths : number[] = strengths.sort((a:number, b:number) => a - b)
+
+    let differenceStrengths : number[] = []
+
+    for(let i = 0; i < sortedStrengths.length - 1; i++){
+        const difference = sortedStrengths[i + 1] - sortedStrengths[i] 
+        differenceStrengths.push(difference)
+
+    }
+
+    return Math.min(...differenceStrengths)
 }
 
 export const Horses : PuzzleProps = {
