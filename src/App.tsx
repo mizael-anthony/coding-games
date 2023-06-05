@@ -2,9 +2,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Temperatures } from './puzzles/temperatures'
+import { Horses } from './puzzles/horses'
 import { PuzzleProps } from './types/exercises'
 import Puzzles from './pages/Puzzles'
-import { Horses } from './puzzles/horses'
 
 const puzzles : PuzzleProps[] = [
   Temperatures,
@@ -28,7 +28,7 @@ function App() {
             </a>
           </div>
         </section>
-        
+
         <section>
           <Puzzles puzzles={puzzles} />
         </section>
